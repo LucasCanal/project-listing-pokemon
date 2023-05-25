@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1450px;
+    margin: 0 auto;
+    background-color: #a6c2d9d3;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+header .logo-pokeball,
+header .image-button {
+    width: 60px;
+    transition: 0.2s ease-in-out;
+}
+
+main .card-pokemon-12 {
+    width: 75px;
+    margin: 7px;
+}
+
+header #button-change-theme {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .image-button,
+main .card-pokemon {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listing-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .card-pokemon {
+    background-color: #ceddea;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .card-pokemon:hover {
+    background-color: #96d9d6a9;
+}
+
+.mode-night .card-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .card-pokemon .informations {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+}
+
+main .card-pokemon .informations span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .card-pokemon .gif {
+    height: 90px;
+    width: 90px;
+}
+
+main .card-pokemon .types {
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+main .card-pokemon .type {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .grass {
+    background-color: #7ac74c;
+}
+
+main .poison {
+    background-color: #df67ddfb;
+}
+
+main .fire {
+    background-color: #ee8130;
+}
+
+main .water {
+    background-color: #6390f0;
+}
+
+main .bug {
+    background-color: #a6b91a;
+}
+
+main .flying {
+    background:linear-gradient(to bottom,#3dc5efd3 50%,#a4a4a4b4 50%);
+}
+
+main .text {
+     max-height: 80px;
+     overflow-y: scroll;
+     font-size: 14px;
+     padding-right: 10px;
+}
+
+body.dark-mode {
+    background-color: #212121b9;
+    color: #7d7575;
+}
